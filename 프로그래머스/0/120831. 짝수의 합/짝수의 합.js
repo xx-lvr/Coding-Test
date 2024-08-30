@@ -1,10 +1,8 @@
 function solution(n) {
-    let result = 0;
-  for(i = 0; i<=n; i++){
-     if (i % 2 === 0)
-        {
-            result += i;
-        } 
-  } 
-    return result;
+    var answer = 0;
+
+    for(let i=2 ; i<=n ; i+=2)
+        answer += i;
+
+    return answer;
 }
