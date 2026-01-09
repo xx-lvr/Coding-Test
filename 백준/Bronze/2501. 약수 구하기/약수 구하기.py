@@ -1,11 +1,11 @@
 n, k = map(int, input().split())
 
-d = []
+c = 0
 for i in range(1, n+1):
     if n % i == 0:
-        d.append(i)
-
-if len(d) >= k:
-    print(d[k-1])
+        c += 1
+        if c == k:
+            print(i)
+            break
 else:
     print(0)
