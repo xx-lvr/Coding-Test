@@ -1,10 +1,10 @@
 # [level 0] 약수 구하기 - 120897 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120897) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120897?language=python3) 
 
 ### 성능 요약
 
-메모리: 33.4 MB, 시간: 0.46 ms
+메모리: 9.32 MB, 시간: 0.65 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 10월 03일 14:11:15
+2026년 01월 17일 22:15:41
 
 ### 문제 설명
 
