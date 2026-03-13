@@ -1,7 +1,7 @@
 import sys
 input = sys.stdin.readline
 
-n = int(input().strip())
+n = int(input())
 li = sorted(list(map(int, input().split())))
 
 
