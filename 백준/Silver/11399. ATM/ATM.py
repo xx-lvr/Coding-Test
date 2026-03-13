@@ -12,3 +12,7 @@ for i in li:
     total += time
 
 print(total)
+
+## for i in range(1, n)
+##     time[i] += time[i - 1]
+## print(sum(time))
