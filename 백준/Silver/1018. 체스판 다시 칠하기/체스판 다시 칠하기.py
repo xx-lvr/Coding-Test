@@ -7,16 +7,16 @@ board = list(list(input().strip()) for _ in range(m))
 ans = float('inf')
 for i in range(m - 7):
     for j in range(n - 7):
-        case1 = 0
-        case2 = 0
+        cnt = 0
         for a in range(i, i + 8):
             for b in range(j, j + 8):
                 if (a + b) % 2 == 0:
-                    if board[a][b] != 'W': case1 += 1
-                    if board[a][b] != 'B': case2 += 1
+                    if board[a][b] != 'W':
+                        cnt += 1
                 else:
-                    if board[a][b] != 'B': case1 += 1
-                    if board[a][b] != 'W': case2 += 1
-        ans = min(ans, case1, case2)
+                    if board[a][b] != 'B':
+                        cnt += 1
+
+        ans = min(ans, cnt, 64 - cnt)
 
 print(ans)
