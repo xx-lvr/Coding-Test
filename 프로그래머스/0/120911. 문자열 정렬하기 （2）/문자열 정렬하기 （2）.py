@@ -1,2 +1,4 @@
 def solution(my_string):
-   return ''.join(sorted(my_string.lower()))
+    answer = my_string.lower()
+    answer = ''.join(sorted(answer))
+    return answer
