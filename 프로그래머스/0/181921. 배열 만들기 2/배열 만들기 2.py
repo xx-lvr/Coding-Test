@@ -4,10 +4,7 @@ def solution(l, r):
     for i in range(l, r + 1):
         s = str(i).replace('0', '').replace('5', '')
 
-        if len(s) == 0:
+        if not s:
             answer.append(i)
 
-    if len(answer) == 0:
-        return [-1]
-
-    return answer
+    return answer if answer else [-1]
