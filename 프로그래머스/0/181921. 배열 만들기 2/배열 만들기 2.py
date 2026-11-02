@@ -1,0 +1,13 @@
+def solution(l, r):
+    answer = []
+
+    for i in range(l, r + 1):
+        s = str(i).replace('0', '').replace('5', '')
+
+        if len(s) == 0:
+            answer.append(i)
+
+    if len(answer) == 0:
+        return [-1]
+
+    return answer
