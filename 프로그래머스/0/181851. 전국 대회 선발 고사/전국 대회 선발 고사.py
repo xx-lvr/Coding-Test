@@ -1,0 +1,8 @@
+def solution(rank, attendance):
+    answer = []
+    for i in range(len(rank)):
+        if attendance[i] == True:
+            answer.append((rank[i], i))
+    
+    answer.sort()
+    return answer[0][1] * 10000 + answer[1][1] * 100 + answer[2][1] * 1
